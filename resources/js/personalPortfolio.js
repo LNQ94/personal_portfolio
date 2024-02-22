@@ -1,3 +1,4 @@
+// cursor
 document.addEventListener("DOMContentLoaded", function() {
     function typeWriter(text, i) {
         if (i < text.length) {
@@ -13,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
             i++;
             setTimeout(function() {
                 typeWriter(text, i);
-            }, 400); // Adjust typing speed here (milliseconds)
+            }, 400);
         } else {
-            document.getElementById("cursor").style.display = "none"; // Hide cursor when typing is done
+            document.getElementById("cursor").style.display = "none";
         }
     }
     
@@ -23,12 +24,82 @@ document.addEventListener("DOMContentLoaded", function() {
     typeWriter(text, 0);
 });
 
+// Erscheinen von Tennis-Info
+document.addEventListener('DOMContentLoaded', function() {
+    var tennisIcon = document.getElementById('tennis');
+    var tennisInfo = document.getElementById('tennis-info');
 
+    tennisIcon.addEventListener('mouseover', function() {
+        tennisInfo.style.display = 'block';
+        tennisIcon.style.height = '5rem';
+    });
 
+    tennisIcon.addEventListener('mouseout', function() {
+        tennisInfo.style.display = 'none';
+        tennisIcon.style.height = '3rem';
+    });
+});
 
+// Erscheinen von Schulinfo
+document.addEventListener('DOMContentLoaded', function() {
+    var schuleIcon = document.getElementById('schule');
+    var schuleInfo = document.getElementById('schule-info');
 
+    schuleIcon.addEventListener('mouseover', function() {
+        schuleInfo.style.display = 'block';
+        schuleIcon.style.height = '5rem';
+    });
 
+    schuleIcon.addEventListener('mouseout', function() {
+        schuleInfo.style.display = 'none';
+        schuleIcon.style.height = '3rem';
+    });
+});
 
+// Erscheinen von Uni-Info
+document.addEventListener('DOMContentLoaded', function() {
+    var uniIcon = document.getElementById('uni');
+    var uniInfo = document.getElementById('uni-info');
 
+    uniIcon.addEventListener('mouseover', function() {
+        uniInfo.style.display = 'block';
+        uniIcon.style.height = '5rem';
+    });
 
+    uniIcon.addEventListener('mouseout', function() {
+        uniInfo.style.display = 'none';
+        uniIcon.style.height = '3rem';
+    });
+});
 
+// Erscheinen von Arbeit-Info
+document.addEventListener('DOMContentLoaded', function() {
+    var arbeitIcon = document.getElementById('arbeit');
+    var arbeitInfo = document.getElementById('arbeit-info');
+
+    arbeitIcon.addEventListener('mouseover', function() {
+        arbeitInfo.style.display = 'block';
+        arbeitIcon.style.height = '5rem';
+    });
+
+    arbeitIcon.addEventListener('mouseout', function() {
+        arbeitInfo.style.display = 'none';
+        arbeitIcon.style.height = '3rem';
+    });
+});
+
+// Erscheinen von Coding-Info
+document.addEventListener('DOMContentLoaded', function() {
+    var codingIcon = document.getElementById('coding');
+    var codingInfo = document.getElementById('coding-info');
+
+    codingIcon.addEventListener('mouseover', function() {
+        codingInfo.style.display = 'block';
+        codingIcon.style.height = '5rem';
+    });
+
+    codingIcon.addEventListener('mouseout', function() {
+        codingInfo.style.display = 'none';
+        codingIcon.style.height = '3rem';
+    });
+});

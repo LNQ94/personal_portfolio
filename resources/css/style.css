@@ -126,3 +126,83 @@ main {
     padding-top: 5rem;
 }
 
+.maus-info {
+    position: relative;
+    text-align: center;
+    transform: translateY(-100%);
+    left: 70%; 
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    background-image: url('../image/sprechblase.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 4rem;
+}
+
+.maus-info p {
+    padding-top: 1rem;
+}
+
+#maus {
+    height: 2rem;
+}
+
+.timeline {
+    display: flex;
+}
+
+.year-section {
+    padding-right: 3%;
+    text-align: center;
+}
+
+.icon {
+    height: 3rem;
+}
+
+.year {
+    font-size: 1.2rem;
+    color: #3A3B3C;
+}
+
+.spuren {
+    padding-right: 3%;
+    padding-top: 3rem;
+    width: 100px;
+    height: 50px;
+}
+
+.info-text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    background-color:#687169;
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    width: 350px;
+    display: none;
+}
+
+#schule-info {
+    margin-left: 7%;
+}
+
+#uni-info {
+    margin-left:27%;
+}
+
+#arbeit-info {
+    margin-left:50%;
+}
+
+#coding-info {
+    margin-left:60%;
+}
+
+footer {
+    background-color: #405e25;
+}
+
