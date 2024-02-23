@@ -129,24 +129,44 @@ main {
 .maus-info {
     position: relative;
     text-align: center;
-    transform: translateY(-100%);
-    left: 70%; 
+    transform: translateY(-6rem);
+    left: 41rem; 
     font-size: 0.7rem;
     padding-top: 1rem;
     padding-bottom: 1.2rem;
     background-image: url('../image/sprechblase.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 12rem;
-    height: 4rem;
+    width: 15rem;
+    height: 6rem;
 }
 
 .maus-info p {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 5rem;
 }
 
-#maus {
+.maus {
     height: 2rem;
+    position: relative;
+    background-image: url('../image/maus.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: mausBewegung 20s infinite linear; 
+}
+
+@keyframes mausBewegung {
+    0% { left: 0; top: 0; }
+    3% { left: 15%; top: 0; }
+    10% { left: 40%; top: 23%; }
+    15% { left: 65%; top: 57%; }
+    20% { left: 40%; top: 90%; }
+    25% { left: 15%; top: 57%; }
+    30% { left: 40%; top: 23%; }
+    35% { left: 65%; top: 0; }
+    40% { left: 90%; top: 0; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 .timeline {
@@ -200,6 +220,10 @@ main {
 
 #coding-info {
     margin-left:60%;
+}
+
+.skill-container {
+    
 }
 
 footer {
