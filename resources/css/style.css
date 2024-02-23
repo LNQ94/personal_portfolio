@@ -15,6 +15,13 @@ h1 {
     font-size: 1rem;
 }
 
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #9ACB34;
+    text-align: center;
+}
+
 header {
     max-width: 1600px;
     position: fixed;
@@ -222,8 +229,46 @@ main {
     margin-left:60%;
 }
 
+.swiper-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #405e25;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+.swiper-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rückwärts span {
+    transform: translate(-50%, -50%) rotate(180deg); /* Um den Pfeil umzukehren */
+}
+
+.all-skills {
+    display: inline-flex;
+}
+
 .skill-container {
-    
+    margin-top: 4rem;
+    margin-right: 1rem;
+    background-color: white;
+    width: 20rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    border-radius: 3px;
+    padding: 0.5rem;    
+}
+
+.skill-container p {
+    padding-left: 1rem;
+    font-size: 1rem;
 }
 
 footer {
