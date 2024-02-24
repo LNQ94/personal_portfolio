@@ -229,6 +229,10 @@ main {
     margin-left:60%;
 }
 
+.swiper {
+    padding-left: 80%;
+}
+
 .swiper-button {
     width: 40px;
     height: 40px;
@@ -238,6 +242,15 @@ main {
     color: white;
     font-size: 20px;
     position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.1s ease;   
+}
+
+.swiper-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #405e25;
 }
 
 .swiper-button span {
@@ -252,11 +265,16 @@ main {
 }
 
 .all-skills {
-    display: inline-flex;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    max-width: 95%;
 }
 
 .skill-container {
-    margin-top: 4rem;
+    flex: 0 0 auto;
+    margin-top: 2rem;
     margin-right: 1rem;
     background-color: white;
     width: 20rem;
