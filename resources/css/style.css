@@ -291,5 +291,15 @@ main {
 
 footer {
     background-color: #405e25;
+    margin-top: -1rem;
+    padding-left: 10rem;
+    padding-bottom: 2rem;
 }
 
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #9ACB34;
+}
