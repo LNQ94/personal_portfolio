@@ -268,20 +268,20 @@ main {
     display: flex;
     overflow-x: auto;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     max-width: 95%;
 }
 
 .skill-container {
     flex: 0 0 auto;
     margin-top: 2rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
     background-color: white;
     width: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.1s ease;
     border-radius: 3px;
-    padding: 0.5rem;    
+    padding: 2.2rem 2.5rem;
 }
 
 .skill-container p {

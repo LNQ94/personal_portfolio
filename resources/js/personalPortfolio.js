@@ -110,24 +110,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttonNext = document.querySelector(".swiper-button.vorwärts");
     const buttonBack = document.querySelector(".swiper-button.rückwärts");
     const containerWidth = container.offsetWidth;
-    // Breite .skill-container
-    const skillWidth = document.querySelector(".skill-container").offsetWidth;
+    // Breite .skill-container inklusive Margin
+    const skillWidth = document.querySelector(".skill-container").offsetWidth +
+                        parseFloat(window.getComputedStyle(document.querySelector('.skill-container')).marginLeft) +
+                        parseFloat(window.getComputedStyle(document.querySelector('.skill-container')).marginRight);
+    // Anzahl der sichtbaren .skill-container-Elemente
+    const visibleSkills = Math.floor(containerWidth / (3*skillWidth));
     // Handler für Klick auf den Vorwärtspfeil
     buttonNext.addEventListener("click", function() {
-        // Anzahl der sichtbaren .skill-container-Elemente
-        const visibleSkills = Math.floor(containerWidth / skillWidth);
         // Anzahl der verschobenen .skill-container-Elemente
         const scrollAmount = skillWidth * visibleSkills;
-        // Scrolle den Container um die Breite eines .skill-container-Elements nach rechts
+        // Scrolle Container nach rechts
         container.scrollLeft += scrollAmount;
     });
     // Handler für Klick auf den Rückwärtspfeil
     buttonBack.addEventListener("click", function() {
-        // Anzahl der sichtbaren .skill-container-Elemente
-        const visibleSkills = Math.floor(containerWidth / skillWidth);
         // Anzahl der verschobenen .skill-container-Elemente
         const scrollAmount = skillWidth * visibleSkills;
-        // Scrolle den Container um die Breite eines .skill-container-Elements nach links
+        // Scrolle Container nach links
         container.scrollLeft -= scrollAmount;
     });
 });
+
