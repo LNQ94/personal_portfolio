@@ -336,16 +336,35 @@ footer a {
 
 
 @media only screen and (max-width: 700px) {
+    html {
+        font-size: 9px;
+    }
+
     header {
-        width: 300vw;
+        width: 100vw;
     }
 
     section {
-        width: 315%;
+        width: 100%;
     }
 
     footer {
-        width: 270%;
+        width: 87%;
+        padding-left: 5rem;
+    }
+
+    .presenting-text {
+        padding-left: 5rem;
+    }
+
+    #start {
+        display: block;
+    }
+
+    #profilfoto {
+        margin-top: -8rem;
+        height: 150px;
+        padding-left: 40%;
     }
 
     .maus-info {
@@ -354,5 +373,54 @@ footer a {
 
     .maus-info-mobil {
         display: block;
+        left: 15rem;
+    }
+    .info-text {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        background-color:#687169;
+        color: white;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        width: 170px;
+        display: none;
+    }
+
+    .icon {
+        height: 1.5rem;
+    }
+    
+    .year {
+        font-size: 1rem;
+        color: #3A3B3C;
+    }
+    
+    .spuren {
+        padding-right: 3%;
+        padding-top: 3rem;
+        width: 30px;
+        height: 16px;
+    }
+
+    #arbeit-info {
+        margin-left:30%;
+    }
+
+    #coding-info {
+        margin-left:35%;
+    }
+
+    .swiper {
+        padding-left: 70%;
+    }
+
+    .swiper-button {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .all-skills {
+        padding-left: 15%;
     }
 }

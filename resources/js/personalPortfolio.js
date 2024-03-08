@@ -31,12 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tennisIcon.addEventListener('mouseover', function() {
         tennisInfo.style.display = 'block';
-        tennisIcon.style.height = '5rem';
+        if (window.innerWidth > 700) {
+            tennisIcon.style.height = '5rem';
+        } else {
+            tennisIcon.style.height = '3rem';
+        }        
     });
 
     tennisIcon.addEventListener('mouseout', function() {
         tennisInfo.style.display = 'none';
-        tennisIcon.style.height = '3rem';
+        if (window.innerWidth > 700) {
+            tennisIcon.style.height = '3rem';
+        } else {
+            tennisIcon.style.height = '1.5rem';
+        }
+        
     });
 });
 
@@ -47,12 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     schuleIcon.addEventListener('mouseover', function() {
         schuleInfo.style.display = 'block';
-        schuleIcon.style.height = '5rem';
+        if (window.innerWidth > 700) {
+            schuleIcon.style.height = '5rem';
+        } else {
+            schuleIcon.style.height = '3rem';
+        } 
     });
 
     schuleIcon.addEventListener('mouseout', function() {
         schuleInfo.style.display = 'none';
-        schuleIcon.style.height = '3rem';
+        if (window.innerWidth > 700) {
+            schuleIcon.style.height = '3rem';
+        } else {
+            schuleIcon.style.height = '1.5rem';
+        }        
     });
 });
 
@@ -63,12 +80,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     uniIcon.addEventListener('mouseover', function() {
         uniInfo.style.display = 'block';
-        uniIcon.style.height = '5rem';
+        if (window.innerWidth > 700) {
+            uniIcon.style.height = '5rem';
+        } else {
+            uniIcon.style.height = '3rem';
+        }        
     });
 
     uniIcon.addEventListener('mouseout', function() {
         uniInfo.style.display = 'none';
-        uniIcon.style.height = '3rem';
+        if (window.innerWidth > 700) {
+            uniIcon.style.height = '3rem';
+        } else {
+            uniIcon.style.height = '1.5rem';
+        }
     });
 });
 
@@ -79,12 +104,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     arbeitIcon.addEventListener('mouseover', function() {
         arbeitInfo.style.display = 'block';
-        arbeitIcon.style.height = '5rem';
+        if (window.innerWidth > 700) {
+            arbeitIcon.style.height = '5rem';
+        } else {
+            arbeitIcon.style.height = '3rem';
+        }
     });
 
     arbeitIcon.addEventListener('mouseout', function() {
         arbeitInfo.style.display = 'none';
-        arbeitIcon.style.height = '3rem';
+        if (window.innerWidth > 700) {
+            arbeitIcon.style.height = '3rem';
+        } else {
+            arbeitIcon.style.height = '1.5rem';
+        }
     });
 });
 
@@ -95,12 +128,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     codingIcon.addEventListener('mouseover', function() {
         codingInfo.style.display = 'block';
-        codingIcon.style.height = '5rem';
+        if (window.innerWidth > 700) {
+            codingIcon.style.height = '5rem';
+        } else {
+            codingIcon.style.height = '3rem';
+        }
     });
 
     codingIcon.addEventListener('mouseout', function() {
         codingInfo.style.display = 'none';
-        codingIcon.style.height = '3rem';
+        if (window.innerWidth > 700) {
+            codingIcon.style.height = '3rem';
+        } else {
+            codingIcon.style.height = '1.5rem';
+        }
     });
 });
 
