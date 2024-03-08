@@ -26,7 +26,7 @@ header {
     max-width: 1600px;
     position: fixed;
     z-index: 100;
-    width: 100%;
+    width: 100vw;
     background-color: white;
 }
 
@@ -176,6 +176,36 @@ main {
     100% { opacity: 0; }
 }
 
+.maus-info-mobil {
+    position: relative;
+    text-align: center;
+    transform: translateY(-6rem);
+    left: 41rem; 
+    font-size: 0.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
+    background-image: url('../image/sprechblase.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 6rem;
+    display: none;
+}
+
+.maus-info-mobil p {
+    padding-top: 0.5rem;
+    padding-right: 5rem;
+}
+
+.maus-mobil {
+    height: 2rem;
+    position: relative;
+    background-image: url('../image/maus_mobil.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: mausBewegung 20s infinite linear; 
+}
+
 .timeline {
     display: flex;
 }
@@ -302,4 +332,27 @@ footer p {
 
 footer a {
     color: #9ACB34;
+}
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        width: 300vw;
+    }
+
+    section {
+        width: 315%;
+    }
+
+    footer {
+        width: 270%;
+    }
+
+    .maus-info {
+        display: none;
+    }
+
+    .maus-info-mobil {
+        display: block;
+    }
 }
