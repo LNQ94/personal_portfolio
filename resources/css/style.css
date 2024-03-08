@@ -91,6 +91,12 @@ main {
     font-weight: bold;
 }
 
+#typing-text-mobil {
+    color: #405e25;
+    font-weight: bold;
+    display: none;    
+}
+
 #cursor {
     position: absolute;
     top: 15rem;
@@ -361,6 +367,18 @@ footer a {
         display: block;
     }
 
+    #typing-text {
+        display: none;
+    }
+
+    #typing-text-mobil {
+        display: block;
+    }
+
+    #cursor {
+        display: none;
+    }
+
     #profilfoto {
         margin-top: -8rem;
         height: 150px;
@@ -383,7 +401,7 @@ footer a {
         margin-top: 1rem;
         padding: 1rem;
         border-radius: 5px;
-        width: 170px;
+        width: 200px;
         display: none;
     }
 

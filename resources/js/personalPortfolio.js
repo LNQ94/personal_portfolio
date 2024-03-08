@@ -1,28 +1,30 @@
 // cursor
-document.addEventListener("DOMContentLoaded", function() {
-    function typeWriter(text, i) {
-        if (i < text.length) {
-            document.getElementById("typing-text").innerHTML += text.charAt(i);
-            if (i === 6 || i === 7) {
-                console.log(text.charAt(i))
-                document.getElementById("cursor").style.left = i + 1 + "rem";
-            } else if (i === 8 || i=== 13 || i === text.length-1) {
-                document.getElementById("cursor").style.left = i + "rem";
+if (window.innerWidth > 700) {
+    document.addEventListener("DOMContentLoaded", function() {
+        function typeWriter(text, i) {
+            if (i < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(i);
+                if (i === 6 || i === 7) {
+                    console.log(text.charAt(i))
+                    document.getElementById("cursor").style.left = i + 1 + "rem";
+                } else if (i === 8 || i=== 13 || i === text.length-1) {
+                    document.getElementById("cursor").style.left = i + "rem";
+                } else {
+                    document.getElementById("cursor").style.left = i + 0.6 + "rem";
+                }           
+                i++;
+                setTimeout(function() {
+                    typeWriter(text, i);
+                }, 400);
             } else {
-                document.getElementById("cursor").style.left = i + 0.6 + "rem";
-            }           
-            i++;
-            setTimeout(function() {
-                typeWriter(text, i);
-            }, 400);
-        } else {
-            document.getElementById("cursor").style.display = "none";
+                document.getElementById("cursor").style.display = "none";
+            }
         }
-    }
-    
-    var text = "Programmiererin";
-    typeWriter(text, 0);
-});
+        
+        var text = "Programmiererin";
+        typeWriter(text, 0);
+    });
+}
 
 // Erscheinen von Tennis-Info
 document.addEventListener('DOMContentLoaded', function() {
